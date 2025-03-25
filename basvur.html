@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru Sayfası</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+/* Başvuru Sayfası Stilleri */
+#basvuru-sayfasi {
+    background-color: #d3e7fc; 
+    padding: 80px 0;
+    margin: 15px;
+}
+
+#basvuru-sayfasi h2 {
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+.basvuru-formu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.1); /* Hafif mavi gölge */
+}
+
+.basvuru-formu label {
+    color: #007bff; /* Etiketler mavi renk */
+    font-weight: bold;
+}
+
+.basvuru-formu .form-control {
+    margin-bottom: 20px;
+    border: 1px solid #007bff; /* Mavi kenarlık */
+    border-radius: 5px; /* Yuvarlak köşeler */
+}
+
+.basvuru-formu .btn-basvur {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+        .basvuru-formu .btn-basvur:hover {
+            background-color: #0056b3; 
+        }
+
+        .basvuru-sonuc {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .adres-group {
+            margin-bottom: 20px;
+        }
+
+        .adres-group input {
+            margin-bottom: 10px;
+        }
+
+.form-check-label {
+  margin-right: 15px;
+        }
+
+        /* animasyonlar */
+        .form-control:focus {
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .btn-basvur {
+        animation: btnAnimation 2s infinite; /* btnAnimation adlı animasyonu 2 saniye süreyle ve sonsuz tekrarla uygula */
+}
+
+/* btnAnimation adlı animasyon tanımı */
+@keyframes btnAnimation {
+  0%, 100% {
+    transform: scale(1); /* Başlangıç ve bitiş durumunda ölçeği normal boyuta getir */
+  }
+  50% {
+    transform: scale(1.1); /* Animasyonun yarısında ölçeği biraz büyüt */
+  }
+}
+
+
+        .basvuru-formu label::after {
+            content: '*';
+            color: red;
+            margin-left: 5px;
+            display: inline;
+        }
+        .form-grou label::after {
+    content: none; /* Kırmızı yıldız işaretini kaldırır */
+    
+}
+       
+
+        </style>
+</head>
+<body>
+
+
+    <!-- Başvuru Sayfası Bölümü -->
+    <section id="basvuru-sayfasi" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>İş Başvuru Formu</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="basvuru-formu">
+                        <form id="basvuruFormu">
+                            <div class="form-group">
+                                <label for="isim">İsim</label>
+                                <input type="text" class="form-control" id="isim" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefon">Telefon</label>
+                                <input type="tel" class="form-control" id="telefon" required   placeholder="123-45-678">
+                            </div>
+                            <div class="form-group">
+                                <label for="dogumTarihi">Doğum Tarihi</label>
+                                <input type="date" class="form-control" id="dogumTarihi" required>
+                            </div>
+                            <div class="form-group adres-group">
+                                <label for="adres">Adres</label>
+                                <input type="text" class="form-control" id="adres" placeholder="Sokak Adı" required>
+                                <input type="text" class="form-control" id="adres2" placeholder="Apartman No, Daire No" required>
+                                <input type="text" class="form-control" id="sehir" placeholder="Şehir" required>
+                                <input type="text" class="form-control" id="postaKodu" placeholder="Posta Kodu" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="egitim">Eğitim Durumu</label>
+                                <select class="form-control" id="egitim" required>
+                                    <option>Lise</option>
+                                    <option>Önlisans</option>
+                                    <option>Lisans</option>
+                                    <option>Yüksek Lisans</option>
+                                    <option>Doktora</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="deneyimler">Deneyimler</label>
+                                <textarea class="form-control" id="deneyimler" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="referanslar">Referanslar</label>
+                                <textarea class="form-control" id="referanslar" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="motivasyon">Motivasyon Mektubu</label>
+                                <textarea class="form-control" id="motivasyon" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="sertifikalar">Sertifikalar ve Eğitimler</label>
+                                <div class="form-grou">
+                                    <label for="sertifika">Sertifika ekle </label>
+                                    <input type="file" class="form-control" id="sertifika" >
+                                </div>
+                                <div class="form-grou">
+                                    <label for="sertifika">Sertifika ekle</label>
+                                    <input type="file" class="form-control" id="sertifika" >
+                                </div>
+                                <div class="form-grou">
+                                    <label for="sertifika">Sertifika ekle</label>
+                                    <input type="file" class="form-control" id="sertifika" >
+                                </div>
+                                <div class="form-grou">
+                                    <label for="sertifika">Sertifika ekle</label>
+                                    <input type="file" class="form-control" id="sertifika" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="yetkinlikler">Yetkinlikler ve Beceriler</label>
+                                <textarea class="form-control" id="yetkinlikler" rows="3"></textarea>
+                            </div>
+                            <div class="form-grou">
+                                <label for="dilBilgisi">Dil Bilgisi</label>
+                                <div>
+                                    <label class="form-check-label"><input type="checkbox" id="turkce" value="Türkçe"> Türkçe</label>
+                                    <label class="form-check-label"><input type="checkbox" id="ingilizce" value="İngilizce"> İngilizce</label>
+                                    <label class="form-check-label"><input type="checkbox" id="almanca" value="Almanca"> Almanca</label>
+                                    <label class="form-check-label"><input type="checkbox" id="fransizca" value="Fransızca"> Fransızca</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-grou">
+                                <label for="dil">dil bilgisi belgesi</label>
+                                <input type="file" class="form-control" id="dil" >
+                            </div>
+                            <div class="form-grou">
+                                <label for="dil">dil bilgisi belgesi</label>
+                                <input type="file" class="form-control" id="dil" >
+                            </div>
+                            <div class="form-grou">
+                                <label for="dil">dil bilgisi belgesi</label>
+                                <input type="file" class="form-control" id="dil" >
+                            </div>
+                            <div class="form-grou">
+                                <label for="dil">dil bilgisi belgesi</label>
+                                <input type="file" class="form-control" id="dil" >
+                            </div>
+                            <div class="form-grou">
+                                <label for="yazilimDilleri">Yazılım Dilleri</label>
+                                <div>
+                                    <input type="checkbox" id="Python"  value="Python">
+                                    <label for="vehicle1" style="color: black;"> Python </label> <br>
+                                    <input type="checkbox" id="java"  value="JAVA">
+                                    <label for="vehicle2" style="color: black;"> Jaava </label> <br>
+                                    <input type="checkbox" id="JavaScript"  value="Javascript">
+                                    <label for="vehicle3" style="color: black;"> Javascript</label> <br>
+                                    <input type="checkbox" id="c"  value="C">
+                                    <label for="vehicle4" style="color: black;"> C</label>  <br>
+                                    <input type="checkbox" id="C#"  value="C#">
+                                    <label for="vehicle5" style="color: black;"> C#</label> <br>
+                                    <input type="checkbox" id="C++"  value="C++">
+                                    <label for="vehicle6" style="color: black;">C++</label> <br>
+                                    <input type="checkbox" id="PHP"  value="PHP">
+                                    <label for="vehicle7" style="color: black;"> PHP</label><br>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sosyalMedya">Sosyal Medya Profilleri</label>
+                                <textarea class="form-control" id="sosyalMedya" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="beklenenMaas">Beklenen Maaş</label>
+                                <input type="number" class="form-control" id="beklenenMaas"   min="17000" max="50000">
+                            </div>
+                            <div class="form-group">
+                                <label for="baslamaTarihi">Başlama Tarihi</label>
+                                <input type="date" class="form-control" id="baslamaTarihi">
+                            </div>
+                            <div class="form-group">
+                                <label for="hobiler">Hobiler ve İlgi Alanları</label>
+                                <textarea class="form-control" id="hobiler" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="pozisyon">Başvurulan Pozisyon</label>
+                                <select class="form-control" id="pozisyon" required>
+                                    <option>Yazılım Geliştirici</option>
+                                    <option>Grafik Tasarımcı</option>
+                                    <option>Proje Yöneticisi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ozgecmis">Özgeçmiş</label>
+                                <input type="file" class="form-control-file" id="ozgecmis" required>
+                            </div>
+                            <button type="submit" class="btn btn-basvur">Başvur</button>
+                        </form>
+                        <div id="basvuruSonuc" class="basvuru-sonuc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Form gönderildiğinde çalışacak işlev
+        document.getElementById('basvuruFormu').addEventListener('submit', function(event) {
+            event.preventDefault(); // Formun sayfa yenilenmeden gönderilmesini engeller
+
+            // Formun tüm alanlarının geçerli olup olmadığını kontrol etmek için built-in metodu kullanıyoruz
+            if (this.checkValidity()) {
+                // Başvuru başarıyla gönderildiğinde mesajı göster
+                document.getElementById('basvuruSonuc').innerHTML = '<div class="alert alert-success" role="alert">Başvurunuz başarıyla gönderildi!</div>';
+                document.getElementById('basvuruSonuc').style.display = 'block';
+
+                // Formu sıfırla
+                this.reset();
+            } else {
+                // Form geçerli değilse tarayıcı otomatik olarak hata mesajlarını gösterecek
+            }
+        });
+    </script>
+</body>
+</html>

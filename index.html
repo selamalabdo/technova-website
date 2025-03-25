@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova</title>
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/dc83a86402.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="TechNova Logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="job.html">İş İlanları</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">İK Politikaları</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Müşteri Destek</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" >
+                            Hakkımızda
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="us.html">Şirket Tarihi ve Genel Bilgiler</a>
+                            <a class="dropdown-item" href="yonetim.html">Yönetim Ekibi ve Organizasyon Şeması</a>
+                            <a class="dropdown-item" href="kultur.html">Şirket Kültürü ve Çalışma Ortamı</a>
+                            <a class="dropdown-item" href="oduller.html">Ödüller ve Başarılar</a>
+                            <a class="dropdown-item" href="sosyal.html">Sosyal Sorumluluk</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownKariyer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kariyer
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownKariyer">
+                            <a class="dropdown-item" href="kariyer-firsatlar.html">Kariyer Fırsatları</a>
+                            <a class="dropdown-item" href="kariyer-gelistirme.html">Kariyer Geliştirme</a>
+                            <a class="dropdown-item" href="calisma-ortami.html">Çalışma Ortamı</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+ <!-- Slider -->
+ <div class="slaytGosterisi-konteyner">
+
+    <div class="benimSlaytlarım solma">
+      <img src="img/women-working.jpg" style="width:100%">
+    </div>
+    
+    <div class="benimSlaytlarım solma">
+      <img src="img/people-with-laptops-office.jpg" style="width:100%">
+    </div>
+    
+    <div class="benimSlaytlarım solma">
+      <img src="img/grup.jpg" style="width:100%">
+    </div>
+    
+    <a class="onceki" onclick="artıSlaytlar(-1)">❮</a>
+    <a class="sonraki" onclick="artıSlaytlar(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="nokta" onclick="mevcutSlayt(1)"></span> 
+      <span class="nokta" onclick="mevcutSlayt(2)"></span> 
+      <span class="nokta" onclick="mevcutSlayt(3)"></span> 
+    </div>
+ 
+
+
+
+<!-- Main Content -->
+<div class="main-container mt-5">
+    <div class="main-row">
+        <div class="main-col-8">
+            <!-- Şirket Tanıtımı -->
+            <section>
+                <h2>Şirket Tanıtımı</h2>
+                <p>TechNova Yazılım A.Ş., yenilikçi yazılım çözümleri üreten, müşteri odaklı bir teknoloji şirketidir. Uzman ekibimiz, en son teknolojileri kullanarak, işletmelerin dijital dönüşüm süreçlerini hızlandırmak ve verimliliği artırmak için çalışmaktadır. Web ve mobil uygulama geliştirme, yapay zeka çözümleri ve bulut bilişim hizmetlerinde lideriz.</p>
+            </section>
+
+            <!-- Misyon, Vizyon ve Değerler -->
+            <section>
+                <h2>Misyon, Vizyon ve Değerler</h2>
+                <p><strong>Misyonumuz:</strong> Müşterilerimize en iyi yazılım çözümlerini sunarak iş süreçlerini optimize etmek ve dijital dönüşümlerine katkıda bulunmak.</p>
+                <p><strong>Vizyonumuz:</strong> Küresel yazılım piyasasında inovasyonun öncüsü olmak ve teknoloji ile sınırları aşan çözümler üretmek.</p>
+                <p><strong>Değerlerimiz:</strong></p>
+                <ul>
+                    <li><strong>Yenilikçilik:</strong> Her zaman en son teknolojileri takip eder ve yaratıcı çözümler üretiriz.</li>
+                    <li><strong>Müşteri Odaklılık:</strong> Müşterilerimizin ihtiyaçlarını anlamak ve beklentilerini aşmak için çalışırız.</li>
+                    <li><strong>Takım Çalışması:</strong> Birlikte çalışarak büyük başarılar elde ederiz.</li>
+                    <li><strong>Sürekli Gelişim:</strong> Kendimizi ve hizmetlerimizi sürekli olarak geliştiririz.</li>
+                    <li><strong>Güvenilirlik:</strong> Her zaman dürüst ve şeffaf bir şekilde iş yaparız.</li>
+                </ul>
+            </section>
+
+            <!-- Güncel Haberler ve Duyurular -->
+            <section id="news-section" class="news-section">
+              <div class="news-container">
+                  <h3>Güncel Haberler ve Duyurular</h3>
+                  <ul class="news-list list-unstyled">
+                      <li class="news-item">
+                          <strong>30 Mayıs 2024:</strong> Yeni AI Tabanlı Proje Yönetim Yazılımımız Lansman Etkinliği
+                          <a href="#" class="news-read-more-link">Devamını Oku</a>
+                          <div class="news-content hidden">
+                              <p><strong>30 Mayıs 2024:</strong> Yeni AI Tabanlı Proje Yönetim Yazılımımız Lansman Etkinliği</p>
+                              <p>TechNova Yazılım A.Ş., 30 Mayıs 2024 tarihinde, sektörde devrim yaratacak yeni bir ürünün lansmanını yapmaya hazırlanıyor! Yeni AI tabanlı proje yönetim yazılımımız, işletmelerin proje yönetimi süreçlerini optimize etmeyi ve verimliliği artırmayı hedefliyor.</p>
+                              <h4>Lansman Etkinliği Detayları:</h4>
+                              <ul>
+                                  <li><strong>Tarih ve Saat:</strong> 30 Mayıs 2024, 09:00 - 17:00</li>
+                                  <li><strong>Yer:</strong> TechNova Yazılım A.Ş. Merkez Ofisi, İstanbul, Türkiye</li>
+                              </ul>
+                              <h4>Etkinlik Programı:</h4>
+                              <ul>
+                                  <li>09:00 - 10:00: Kayıt ve Karşılama Kahvesi</li>
+                                  <li>10:00 - 11:30: Lansman Sunumu</li>
+                                  <li>11:30 - 12:30: Canlı Demo ve Ürün Deneyimi</li>
+                                  <li>12:30 - 14:00: Öğle Yemeği</li>
+                                  <li>14:00 - 15:30: Endüstri Liderleri ve Uzmanlarla Panel</li>
+                                  <li>15:30 - 17:00: Networking ve İkramlar</li>
+                              </ul>
+                              <p><strong>Kimler Başvurabilir:</strong></p>
+                              <ul>
+                                  <li>Proje yönetimi profesyonelleri</li>
+                                  <li>Yazılım geliştiricileri ve mühendisleri</li>
+                                  <li>İş analistleri ve proje yöneticileri</li>
+                                  <li>İşletme yöneticileri ve karar vericileri</li>
+                                  <li>Yapay zeka ve makine öğrenimi uzmanları</li>
+                              </ul>
+                              <p>Etkinliğe katılmak için, <a href="#" class="registration-link">buradan kayıt</a> olabilirsiniz.</p>
+                              <p>Bu heyecan verici etkinlik, yazılım endüstrisinde bir dönüm noktası olacak ve şirketimizin liderliğini bir kez daha kanıtlamasına yardımcı olacak. Sınırlı kontenjanımız olduğu için, erken kayıt yapmanızı öneririz.</p>
+                              <p><a href="#" class="news-close-link">Kapat</a></p>
+                          </div>
+                      </li>
+                      <li class="news-item">
+                          <strong>15 Mayıs 2024:</strong> TechNova, Avrupa'nın En İyi 50 Teknoloji Şirketi Arasında Yer Aldı
+                          <a href="#" class="news-read-more-link">Devamını Oku</a>
+                          <div class="news-content hidden">
+                              <p><strong>15 Mayıs 2024:</strong> TechNova, Avrupa'nın En İyi 50 Teknoloji Şirketi Arasında Yer Aldı</p>
+                              <p>TechNova Yazılım A.Ş., 15 Mayıs 2024 tarihinde prestijli bir başarıya imza attı ve Avrupa'nın en iyi 50 teknoloji şirketi arasında yer aldı! Bu önemli başarı, şirketimizin sürekli olarak yenilikçi çözümler sunma ve müşteri odaklı yaklaşımıyla tanınmasının bir göstergesidir.</p>
+                              <h4>Jüri Değerlendirmesi:</h4>
+                              <p>Avrupa'nın en iyi 50 teknoloji şirketi listesi, sektördeki en başarılı ve yenilikçi şirketleri tanımak için her yıl düzenlenen bir etkinlik. Jüri, şirketlerin teknoloji alanında yaptıkları yenilikleri, müşteri memnuniyetini ve iş sonuçlarını değerlendirerek bu prestijli listeyi belirliyor. TechNova'nın bu listeye girmesi, şirketimizin sektördeki liderliğini ve gücünü bir kez daha kanıtlıyor.</p>
+                              <h4>Başarıya Giden Yol:</h4>
+                              <p>TechNova, son yıllarda sunduğu yenilikçi çözümler ve müşteri odaklı yaklaşımıyla sektörde dikkat çeken bir şirket haline geldi. Yazılım geliştirme, yapay zeka, bulut bilişim ve diğer teknoloji alanlarında yaptığı yatırımlar ve başarılı projeler, şirketin bu prestijli listeye girmesinde etkili oldu.</p>
+                              <p>Ayrıca, şirketin başarısında çalışanlarımızın özverili çalışmaları ve müşterilerimizin bize olan güveni de büyük rol oynadı. Sürekli olarak müşteri memnuniyetini ön planda tutarak, güçlü bir müşteri tabanı oluşturduk ve sektördeki liderliğimizi perçinledik.</p>
+                              <h4>Gelecek İçin Vizyon:</h4>
+                              <p>Bu başarı, tüm çalışanlarımızın özverili çalışmasının ve müşterilerimizin bize olan güveninin bir sonucudur. Gelecekte de aynı azim ve kararlılıkla çalışarak, teknoloji alanında daha da büyük başarılar elde etmeye devam edeceğiz. Müşterilerimize en iyi çözümleri sunmak ve teknolojinin gücünü kullanarak dünya çapında etki yaratmak için çalışmaya devam edeceğiz.</p>
+                              <p><a href="#" class="news-close-link">Kapat</a></p>
+                          </div>
+                      </li>
+                      <li class="news-item">
+                          <strong>1 Mayıs 2024:</strong> Yeni Ofisimizle Beraber Çalışma Ortamımızı Genişlettik
+                          <a href="#" class="news-read-more-link">Devamını Oku</a>
+                          <div class="news-content hidden">
+                              <p><strong>1 Mayıs 2024:</strong> Yeni Ofisimizle Beraber Çalışma Ortamımızı Genişlettik</p>
+                              <p>TechNova Yazılım A.Ş., hızla büyüyen ve gelişen şirketimizin ihtiyaçlarına cevap verebilmek için 1 Mayıs 2024 tarihinde yeni bir ofis açtı! Yeni ofisimiz, daha geniş ve modern bir çalışma ortamı sunarak çalışanlarımızın verimliliğini artıracak ve işbirliğini teşvik edecek.</p>
+                              <h4>Yeni Ofis Detayları:</h4>
+                              <ul>
+                                  <li><strong>Konum:</strong> İstanbul, Türkiye</li>
+                                  <li><strong>Adres:</strong> [Adres Buraya]</li>
+                                  <li><strong>Alan:</strong> 2000 metrekare</li>
+                                  <li><strong>Tasarım:</strong> Modern ve ferah tasarım, açık plan ofis konsepti, doğal ışık altyapısı</li>
+                              </ul>
+                              <h4>Çalışma Ortamı Geliştirmeleri:</h4>
+                              <ul>
+                                  <li><strong>Rahat Oturma Alanları:</strong> Çalışanlarımızın dinlenmesi ve kısa molalar vermesi için rahat oturma alanları ve lounge bölgeleri.</li>
+                                  <li><strong>Modern Toplantı Odaları:</strong> Yaratıcı fikir alışverişi için donanımlı ve teknolojik olarak ileri toplantı odaları.</li>
+                                  <li><strong>Çalışma Alanları:</strong> Esnek çalışma alanları ve kişisel çalışma bölgeleri, çalışanlarımızın verimli bir şekilde çalışmasını sağlar.</li>
+                                  <li><strong>Mutfak ve Dinlenme Alanları:</strong> Sosyal etkileşimi teşvik etmek için modern mutfak ve dinlenme alanları.</li>
+                              </ul>
+                              <h4>Etkinlikler ve Aktiviteler:</h4>
+                              <p>Yeni ofisimizde, düzenli olarak çeşitli etkinlikler ve aktiviteler düzenleyerek çalışanlarımızın sosyal bağlarını güçlendirecek ve motivasyonlarını artıracak bir çalışma ortamı oluşturmayı hedefliyoruz. Film geceleri, oyun turnuvaları, atölye çalışmaları ve sosyal sorumluluk projeleri gibi etkinlikler, şirket kültürümüzün bir parçası haline gelecek.</p>
+                              <h4>Çevresel Duyarlılık:</h4>
+                              <p>Yeni ofisimizde çevresel duyarlılık da ön planda. Geri dönüşüm olanakları, enerji tasarruflu aydınlatma sistemleri ve çevre dostu malzemeler kullanarak, çevreye ve sürdürülebilirliğe olan katkımızı artırıyoruz.</p>
+                              <p>Yeni ofisimiz, TechNova ailesinin büyümesini destekleyecek ve çalışanlarımızın işlerini daha verimli bir şekilde yapmalarına olanak sağlayacak modern bir çalışma ortamı sunuyor.</p>
+                              <p><a href="#" class="news-close-link">Kapat</a></p>
+                          </div>
+                      </li>
+                      <li class="news-item">
+                          <strong>İş İlanı: Yazılım Geliştirme Uzmanı Aranıyor!</strong>
+                          <a href="#" class="news-read-more-link">Devamını Oku</a>
+                          <div class="news-content hidden">
+                              <p><strong>İş İlanı: Yazılım Geliştirme Uzmanı Aranıyor!</strong></p>
+                              <p>TechNova Yazılım A.Ş., ekibimize katılmak üzere deneyimli ve yetenekli bir Yazılım Geliştirme Uzmanı arıyor! Şirketimiz, yenilikçi yazılım çözümleri sunan, müşteri odaklı bir teknoloji şirketidir. Yapay zeka, web ve mobil uygulama geliştirme, bulut bilişim ve diğer teknoloji alanlarında çalışanlarımızla birlikte endüstri lideri olmaya devam ediyoruz.</p>
+                              <h4>Pozisyon: Yazılım Geliştirme Uzmanı</h4>
+                              <h4>Pozisyon Tanımı:</h4>
+                              <ul>
+                                  <li>Web ve mobil uygulamaların geliştirilmesi ve bakımı</li>
+                                  <li>Veritabanı yönetimi ve veri entegrasyonu</li>
+                                  <li>Yapay zeka ve makine öğrenimi uygulamalarının geliştirilmesi</li>
+                                  <li>Yeni teknolojilerin takip edilmesi ve şirket projelerine entegrasyonu</li>
+                              </ul>
+                              <h4>İstenilen Nitelikler:</h4>
+                              <ul>
+                                  <li>Üniversitelerin ilgili bölümlerinden mezun</li>
+                                  <li>En az 3 yıl yazılım geliştirme deneyimi</li>
+                                  <li>Web ve mobil uygulama geliştirme konusunda uzmanlık</li>
+                                  <li>İyi derecede bilgi birikimi ve deneyim: PHP, JavaScript, HTML/CSS, SQL vb.</li>
+                                  <li>İyi düzeyde İngilizce bilgisi tercih sebebidir</li>
+                              </ul>
+                              <h4>Adaylarda Aranan Yetenekler:</h4>
+                              <ul>
+                                  <li>Problem çözme becerileri</li>
+                                  <li>Ekip çalışmasına yatkınlık</li>
+                                  <li>İletişim yeteneği güçlü</li>
+                                  <li>Sürekli öğrenmeye ve kendini geliştirmeye istekli</li>
+                              </ul>
+                              <h4>Başvuru:</h4>
+                              <p>Eğer kendinizi bu pozisyonda görebiliyorsanız ve TechNova ailesine katılmak istiyorsanız, başvurularınızı [iş başvuru formu linki] üzerinden yapabilirsiniz. Lütfen CV'nizi ve kısa bir önyazı ile birlikte başvurunuzda belirtin. Başvurularınızı en geç [başvuru tarihi] tarihine kadar bekliyoruz.</p>
+                              <p>TechNova Yazılım A.Ş., yenilikçi ve dinamik bir çalışma ortamı sunarak çalışanlarının kariyerlerini geliştirmelerine ve başarıya ulaşmalarına olanak tanır. Siz de bu heyecan verici yolculuğa katılmak için başvurunuzu bekliyoruz!<a href="job.html" class="apply-link">buradan kayıt</a>  </p>
+                              <p><a href="#" class="news-close-link">Kapat</a></p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+        </div>
+        <div class="main-col-4">
+          <!-- Hızlı Erişim Bağlantıları -->
+          <section>
+              <h2>Hızlı Erişim</h2>
+              <ul class="quick-access-list">
+                  <li><a href="#">İş İlanları</a></li>
+                  <li><a href="#">İnsan Kaynakları Politikaları</a></li>
+                  <li><a href="#">Müşteri Destek</a></li>
+                  <li><a href="#">Blog</a></li>
+              </ul>
+          </section>
+        </div>
+    </div>
+</div>
+
+
+<!-- Hizmetlerimiz Bölümü -->
+<!-- Hizmetlerimiz Bölümü -->
+<section id="services" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Hizmetlerimiz</h2>
+                <p class="lead">Yenilikçi ve müşteri odaklı hizmetlerimizle tanışın</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="service-box" id="service-web">
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <h3>Web Geliştirme</h3>
+                    <p>Modern ve esnek web çözümleri sunuyoruz.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="service-box" id="service-mobile">
+                    <i class="fas fa-mobile-alt fa-3x"></i>
+                    <h3>Mobil Uygulamalar</h3>
+                    <p>Kullanıcı dostu mobil uygulamalar geliştiriyoruz.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="service-box" id="service-cloud">
+                    <i class="fas fa-cloud fa-3x"></i>
+                    <h3>Bulut Bilişim</h3>
+                    <p>Veri güvenliği ve ölçeklenebilir çözümler sunuyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ----------------SSS -->
+<section id="sss" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Sık Sorulan Sorular</h2>
+                <p class="lead">En Çok Sorulan Sorular ve Cevapları</p>
+            </div>
+        </div>
+        <div class="akordeon" id="akordeonSSS">
+            <!-- Soru 1 -->
+            <div class="kart">
+                <div class="kart-baslik" id="baslikBir">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#çökmeBir" aria-expanded="true" aria-controls="çökmeBir">
+                            <i class="fa fa-question-circle"></i> Soru 1: SSS Başlığı Buraya
+                        </button>
+                    </h5>
+                </div>
+                <div id="çökmeBir" class="çökme show" aria-labelledby="baslikBir" data-parent="#akordeonSSS">
+                    <div class="kart-govde">
+                        <i class="fa fa-check-circle"></i> Cevap 1: Sorunun cevabı buraya yazılacak.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="kart">
+                <div class="kart-baslik" id="baslikIki">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#çökmeIki" aria-expanded="false" aria-controls="çökmeIki">
+                            <i class="fa fa-question-circle"></i> Soru 2: SSS Başlığı Buraya
+                        </button>
+                    </h5>
+                </div>
+                <div id="çökmeIki" class="çökme" aria-labelledby="baslikIki" data-parent="#akordeonSSS">
+                    <div class="kart-govde">
+                        <i class="fa fa-check-circle"></i> Cevap 2: Sorunun cevabı buraya yazılacak.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="kart">
+                <div class="kart-baslik" id="baslikUc">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#çökmeUc" aria-expanded="false" aria-controls="çökmeUc">
+                            <i class="fa fa-question-circle"></i> Soru 3: SSS Başlığı Buraya
+                        </button>
+                    </h5>
+                </div>
+                <div id="çökmeUc" class="çökme" aria-labelledby="baslikUc" data-parent="#akordeonSSS">
+                    <div class="kart-govde">
+                        <i class="fa fa-check-circle"></i> Cevap 3: Sorunun cevabı buraya yazılacak.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diğer SSS -->
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ----------Öne Çıkan Projeler / Çalışmalar Bölümü------------- -->
+<section id="featured-projects" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Öne Çıkan Projeler / Çalışmalar</h2>
+                <p class="lead">Son projelerimizden bazılarına göz atın</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project-item">
+                    <img src="img/people-with-laptops-office.jpg" class="img-fluid" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Proje 1 Başlığı</h3>
+                        <p>Kısa açıklama veya proje detayı</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-item">
+                    <img src="img/employees.jpg" class="img-fluid" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Proje 2 Başlığı</h3>
+                        <p>Kısa açıklama veya proje detayı</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-item">
+                    <img src="img/employees1.jpg" class="img-fluid" alt="Project 3">
+                    <div class="overlay">
+                        <h3>Proje 3 Başlığı</h3>
+                        <p>Kısa açıklama veya proje detayı</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  herooooooooooooooooooooooooooooooooooooooooooooooo -->
+<section id="hero" class="hero-section">
+    <div class="video-overlay"></div>
+    <div class="hero-content">
+        <h1>Hoş Geldiniz!</h1>
+        <p>Yenilikçi çözümlerle işlerinizi geliştiriyoruz.</p>
+        <a id="watchVideo" href="https://youtu.be/uWQ_8CtvzoY?autoplay=1&mute=1&loop=1" target="_blank" rel="noopener noreferrer">
+            <i id="fa-play" class="fa-solid fa-play"></i>
+        </a>
+    </div>
+</section>
+  
+
+
+
+
+
+
+
+  <!-- ---------ekip -->
+   
+<!-- 0000000000000000000000000000000000000000000000 -->
+<div class="container">
+    <div class="row text-center">
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-4">
+            <div class="team-member">
+                <img src="img/AYŞE.jpg" alt="AYŞE" class="img-fluid">
+                <div class="member-info">
+                    <h5>Ayşe Yılmaz</h5>
+                    <p>CEO - Founder</p>
+                    <ul class="social mb-0 list-inline">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <a href="ayse">read more</a>
+                </div>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-4">
+            <div class="team-member">
+                <img src="img/man0.jpg" alt="Mehmet Demir" class="img-fluid">
+                <div class="member-info">
+                    <h5>Mehmet Demir</h5>
+                    <p>CTO</p>
+                    <ul class="social mb-0 list-inline">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <a href="">read more</a>
+                </div>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-4">
+            <div class="team-member">
+                <img src="img/güzel-kadın.jpg" alt="Selin" class="img-fluid">
+                <div class="member-info">
+                    <h5>Selin Kaya</h5>
+                    <p>COO</p>
+                    <ul class="social mb-0 list-inline">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <a href="">read more</a>
+                </div>
+            </div>
+        </div><!-- End -->
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-4">
+            <div class="team-member">
+                <img src="img/man2.jpg" alt="ahmet" class="img-fluid">
+                <div class="member-info">
+                    <h5>Ahmet Çelik</h5>
+                    <p>CFO</p>
+                    <ul class="social mb-0 list-inline">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <a href="">read more</a>
+                </div>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-4">
+            <div class="team-member">
+                <img src="img/man3.jpg" alt="burak" class="img-fluid">
+                    <div class="member-info">
+                        <h5>Burak can</h5>
+                        <p>BAŞ Geliştirici</p>
+                        <ul class="social mb-0 list-inline">
+                          <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                          <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                          <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                          <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                            <a href="">read more</a>
+                        </div>
+                    </div>
+                </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-4">
+            <div class="team-member">
+                <img src="img/woman4.jpg" alt="Elif" class="img-fluid">
+                <div class="member-info">
+                    <h5>Elif Kaya</h5>
+                    <p>Yazılım mühendisi</p>
+                    <ul class="social mb-0 list-inline">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <a href="">read more</a>
+                </div>
+            </div>
+        </div><!-- End -->
+
+                <!-- Team item -->
+                <div class="col-xl-3 col-sm-6 mb-4">
+                    <div class="team-member">
+                        <img src="img/man4.jpg" alt="Manuella Nevoresky" class="img-fluid">
+                        <div class="member-info">
+                            <h5>Ali Demirel</h5>
+                            <p>veri bilimci</p>
+                            <ul class="social mb-0 list-inline">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                            <a href="">read more</a>
+                        </div>
+                    </div>
+                </div><!-- End -->
+                        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-4">
+            <div class="team-member">
+                <img src="img/woman.jpg" alt="jiji" class="img-fluid">
+                <div class="member-info">
+                    <h5>Jiji Hadid </h5>
+                    <p>proje yöneticisi</p>
+                    <ul class="social mb-0 list-inline">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <a href="">read more</a>
+                </div>
+            </div>
+        </div><!-- End -->
+        <!-- Diğer ekip üyelerini buraya ekleyebilirimmmmmm -->
+    </div>
+</div>
+       <!-------------------------------------- muşteri yorumlarıiiii--------------------------------------------- -->
+<!--        <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">Column 1</div>
+          <div class="col-sm-6 col-md-4 col-lg-3">Column 2</div>
+          <div class="col-sm-6 col-md-4 col-lg-3">Column 3</div>
+          <div class="col-sm-6 col-md-4 col-lg-3">Column 4</div>
+        </div>
+      </div> -->
+      
+       <!-------------------------------------- muşteri yorumlarıiiii--------------------------------------------- -->
+
+       <section id="müşteri-yorumları" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Müşteri Yorumları</h2>
+                    <p class="lead">Bizimle çalışan müşterilerimizin görüşleri</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div id="müşteriKarusel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="kart">
+                                    <div class="kart-gövde">
+                                        <p class="kart-metin">"Harika bir deneyim yaşadık. Hizmetleri mükemmeldi!"</p>
+                                    </div>
+                                    <div class="kart-alt text-center">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <h6>osman demir </h6>
+                                        <p><em>CEO, ABC Company</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="kart">
+                                    <div class="kart-gövde">
+                                        <p class="kart-metin">"Çok memnun kaldım. Hızlı ve kaliteli hizmet aldım."</p>
+                                    </div>
+                                    <div class="kart-alt text-center">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <h6>turşihan rızzııık zamanı </h6>
+                                        <p><em>Marketing Manager, XYZ Inc.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="kart">
+                                    <div class="kart-gövde">
+                                        <p class="kart-metin">"Ekip çok profesyonel ve iletişimleri harikaydı. Kesinlikle tavsiye ederim!"</p>
+                                    </div>
+                                    <div class="kart-alt text-center">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <h6>bella hadid</h6>
+                                        <p><em>Operations Manager, LMN Corporation</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="kart">
+                                    <div class="kart-gövde">
+                                        <p class="kart-metin">"Ekip çok profesyonel ve iletişimleri harikaydı. Kesinlikle tavsiye ederim!"</p>
+                                    </div>
+                                    <div class="kart-alt text-center">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <h6>Dua lipa</h6>
+                                        <p><em>singer, DANCE Corporation</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- -------------------------------------------------------------------markalaaar brandddd---------------------------- -->
+<!-- -------------------------------------------------------------------markalaaar brandddd---------------------------- -->
+
+<section id="clients" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Müşterilerimizle Tanışın</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-6">
+                <div class="client-logo-container">
+                    <img src="img/brand0.jpg" class="img-fluid" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="client-logo-container">
+                    <img src="img/brand1.jpg" class="img-fluid" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="client-logo-container">
+                    <img src="img/brand2.jpg" class="img-fluid" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="client-logo-container">
+                    <img src="img/brand3.jpg" class="img-fluid" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="client-logo-container">
+                    <img src="img/brand4.jpg" class="img-fluid" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="client-logo-container">
+                    <img src="img/brand5.jpg" class="img-fluid" alt="Client Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- --------------------------------------------------------iletişim---------------------------- -->
+<!-- --------------------------------------------------------iletişim---------------------------- -->
+
+<section class="iletisim-bolumu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="iletisim-bilgisi">
+                    <h3>İletişim</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quas?</p>
+                    <ul class="iletisim-listesi">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Adres</span>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>Bizi Arayın</span>
+                            +9 5589 554889855<br>
+                            +9 6678 2544458841
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                            <a href="#">fkjfkf@example.com</a><br>
+                            <a href="#">iletişim@example.com</a>
+                        </li>
+                        <li>
+                            <i class="far fa-clock"></i>
+                            <span>Açık Saatler</span>
+                            Pazartesi - Cuma<br>
+                            09:00 - 17:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="iletisim-formu">
+                    <h3>Bize Bir Mesaj Gönderin</h3>
+                    <form id="contactForm" action="submit.php" method="post">
+                        <div class="form-group">
+                            <input type="text" name="isim" class="form-control" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="konu" class="form-control" placeholder="Konu" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mesaj" class="form-control" placeholder="Mesajınız" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btnn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- harita  -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48172.44926663006!2d28.93715928797183!3d41.00823026544168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1738751260583!5m2!1str!2str" width="1530" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- foooooooooooooooooooooooooooooooooooo-------------------------------------------------------------- -->
+<!-- foooooooooooooooooooooooooooooooooooo-------------------------------------------------------------- -->
+
+<footer class="renkli-footer">
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="footer-section">
+            <h4>Medya</h4>
+            <ul>
+                <li><a href="#">Çevrimiçi</a></li>
+                <li><a href="#">Basılı</a></li>
+                <li><a href="#">Alternatif Reklamlar</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Teknoloji</h4>
+            <ul>
+                <li><a href="#">Donanım Tasarımı</a></li>
+                <li><a href="#">Yazılım Tasarımı</a></li>
+                <li><a href="#">Dijital Tabela</a></li>
+                <li><a href="#">Otomasyon</a></li>
+                <li><a href="#">Yapay Zekâ</a></li>
+                <li><a href="#">Nesnelerin İnterneti (IoT)</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Hukuk</h4>
+            <ul>
+                <li><a href="#">Gizlilik Politikası</a></li>
+                <li><a href="#">Kullanım Şartları</a></li>
+                <li><a href="#">Site Haritası</a></li> 
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Something. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/dc83a86402.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javaS.js"></script>
+
+</body>
+</html>
+
